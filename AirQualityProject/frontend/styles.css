@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* ===== MODERN PROFESSIONAL THEME ===== */
+.stApp {
+  background: #0a0a0a;
+  color: #e4e4e7;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main-header {
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid #3f3f46;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.main-header p {
+  margin: 1rem 0 0 0;
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  font-weight: 400;
+}
+
+/* ===== CONSISTENT CARD SYSTEM ===== */
+.info-card,
+.warning-card,
+.danger-card,
+.pollutant-info,
+.metric-card {
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #3f3f46;
+  margin: 1rem 0;
+  min-height: 200px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.info-card:hover,
+.warning-card:hover,
+.danger-card:hover,
+.pollutant-info:hover,
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-color: #52525b;
+}
+
+/* ===== CARD VARIANTS ===== */
+.info-card {
+  border-left: 4px solid #10b981;
+}
+
+.warning-card {
+  border-left: 4px solid #f59e0b;
+}
+
+.danger-card {
+  border-left: 4px solid #ef4444;
+}
+
+.pollutant-info {
+  border-left: 4px solid #3b82f6;
+}
+
+.metric-card {
+  border-left: 4px solid #8b5cf6;
+}
+
+/* ===== CARD CONTENT ===== */
+.info-card h4,
+.warning-card h4,
+.danger-card h4,
+.pollutant-info h4,
+.metric-card h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #f4f4f5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-card p,
+.warning-card p,
+.danger-card p,
+.pollutant-info p,
+.metric-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #d4d4d8;
+}
+
+.info-card strong,
+.warning-card strong,
+.danger-card strong,
+.pollutant-info strong,
+.metric-card strong {
+  color: #f4f4f5;
+  font-weight: 600;
+}
+
+/* ===== SIDEBAR STYLING ===== */
+.sidebar-header {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+  border-radius: 12px;
+  border: 1px solid #3f3f46;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-header h2 {
+  color: #3b82f6;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sidebar-header p {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ===== FORM STYLING ===== */
+.stSelectbox > div > div {
+  background-color: #27272a !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 8px !important;
+  color: #e4e4e7 !important;
+}
+
+.stNumberInput > div > div > input {
+  background-color: #27272a !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 8px !important;
+  color: #e4e4e7 !important;
+}
+
+.stTextInput > div > div > input {
+  background-color: #27272a !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 8px !important;
+  color: #e4e4e7 !important;
+}
+
+/* ===== BUTTON STYLING ===== */
+.stButton > button {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3) !important;
+}
+
+.stButton > button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* ===== METRICS STYLING ===== */
+.stMetric {
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%) !important;
+  padding: 1.5rem !important;
+  border-radius: 12px !important;
+  border: 1px solid #3f3f46 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.stMetric > div {
+  color: #e4e4e7 !important;
+}
+
+.stMetric label {
+  color: #a1a1aa !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+}
+
+/* ===== DATAFRAME STYLING ===== */
+.stDataFrame {
+  background: #18181b !important;
+  border-radius: 12px !important;
+  border: 1px solid #3f3f46 !important;
+  overflow: hidden !important;
+}
+
+/* ===== EXPANDER STYLING ===== */
+.streamlit-expanderHeader {
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%) !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 12px !important;
+  color: #e4e4e7 !important;
+  font-weight: 600 !important;
+}
+
+.streamlit-expanderContent {
+  background: #0a0a0a !important;
+  border: 1px solid #3f3f46 !important;
+  border-top: none !important;
+  border-radius: 0 0 12px 12px !important;
+}
+
+/* ===== TABS STYLING ===== */
+.stTabs [data-baseweb="tab-list"] {
+  background: #18181b !important;
+  border-radius: 12px !important;
+  border: 1px solid #3f3f46 !important;
+  padding: 0.5rem !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+  background: transparent !important;
+  color: #a1a1aa !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+
+.stTabs [aria-selected="true"] {
+  background: #3b82f6 !important;
+  color: white !important;
+}
+
+/* ===== FOOTER STYLING ===== */
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+  border-radius: 16px;
+  border: 1px solid #3f3f46;
+  margin-top: 3rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.footer h3 {
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer p {
+  color: #a1a1aa;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.footer-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-features div {
+  color: #10b981;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.footer-copyright {
+  color: #71717a;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .main-header {
+    padding: 1.5rem;
+  }
+
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .main-header p {
+    font-size: 1rem;
+  }
+
+  .info-card,
+  .warning-card,
+  .danger-card,
+  .pollutant-info,
+  .metric-card {
+    min-height: 180px;
+    max-height: 180px;
+    padding: 1.5rem;
+  }
+
+  .footer-features {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* ===== LOADING SPINNER ===== */
+.stSpinner > div {
+  border-color: #3b82f6 !important;
+}
+
+/* ===== FILE UPLOADER ===== */
+.stFileUploader > div {
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%) !important;
+  border: 2px dashed #3f3f46 !important;
+  border-radius: 12px !important;
+  padding: 2rem !important;
+}
+
+.stFileUploader label {
+  color: #e4e4e7 !important;
+  font-weight: 600 !important;
+}
+
+/* ===== SUCCESS/ERROR MESSAGES ===== */
+.stSuccess {
+  background: linear-gradient(135deg, #065f46 0%, #047857 100%) !important;
+  border: 1px solid #10b981 !important;
+  border-radius: 8px !important;
+  color: #d1fae5 !important;
+}
+
+.stError {
+  background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%) !important;
+  border: 1px solid #ef4444 !important;
+  border-radius: 8px !important;
+  color: #fecaca !important;
+}
+
+.stWarning {
+  background: linear-gradient(135deg, #92400e 0%, #d97706 100%) !important;
+  border: 1px solid #f59e0b !important;
+  border-radius: 8px !important;
+  color: #fed7aa !important;
+}

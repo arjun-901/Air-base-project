@@ -1,0 +1,93 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python package logs and local settings
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+*.log
+
+# Editor / IDE configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Dataset files (large) - do NOT add if you want CSV tracked
+/data/
+/data/*
+data/
+data/*.csv
+*.csv
+
+# Models, weights, scalers (large binary files)
+models/
+models/*
+*.h5
+*.ckpt
+*.pb
+*.pth
+*.pt
+*.joblib
+*.pkl
+*.gz
+
+# TensorFlow / Keras
+checkpoint
+tensorboard/
+events.out.tfevents.*
+
+# Caches
+.cache/
+*.cache
+*.dat
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+
+# Test artifacts
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+pytest_cache/
+
+# Docker
+docker-compose.override.yml
+*.env.*.local
+
+# Misc
+*.swp
+*.swo
+*.bak

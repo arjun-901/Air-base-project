@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+scikit-image
+tensorflow>=2.10
+fastapi
+uvicorn
+streamlit
+joblib
+matplotlib
