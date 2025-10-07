@@ -6,8 +6,17 @@ import joblib
 from skimage.transform import resize
 
 def load_df(path, datetime_col='datetime'):
-    df = pd.read_csv(path, parse_dates=[datetime_col])
-    df.sort_values(datetime_col, inplace=True)
+    # Read CSV without strict date parsing to handle datasets without a datetime column
+    df = pd.read_csv(path)
+    if datetime_col in df.columns:
+        df[datetime_col] = pd.to_datetime(df[datetime_col], errors='coerce')
+        # If all values are NaT due to parse errors, synthesize a datetime column
+        if df[datetime_col].isna().all():
+            df[datetime_col] = pd.date_range(start='2000-01-01', periods=len(df), freq='H')
+        df.sort_values(datetime_col, inplace=True)
+    else:
+        # Create a synthetic hourly datetime to enable deterministic ordering
+        df[datetime_col] = pd.date_range(start='2000-01-01', periods=len(df), freq='H')
     df.fillna(method='ffill', inplace=True)
     return df
 
