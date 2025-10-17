@@ -8,3 +8,6 @@ uvicorn
 streamlit
 joblib
 matplotlib
+seaborn
+plotly
+pydantic
